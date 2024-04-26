@@ -55,7 +55,7 @@ export const BookForm = () => {
 
   const handleEmail = (e) => {
     setEmail(e.target.value);
-    const re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    const re = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
     if (!e.target.value.match(re)) {
       setEmailError("Invalid email address");
     } else {
@@ -96,6 +96,8 @@ export const BookForm = () => {
         break;
       case `comment`:
         setCommentDirty(true);
+        break;
+      default:
         break;
     }
   };
