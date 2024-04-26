@@ -42,6 +42,7 @@ export const CamperItem = ({
 
   const onCloseModal = () => {
     setIsModalActive(false);
+    document.querySelector("body").classList.remove("no-scroll");
   };
 
   return (

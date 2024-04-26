@@ -50,9 +50,10 @@ export const CamperModal = ({ adverts, onCloseModal }) => {
   }, [onCloseModal]);
 
   const handleBackdropClick = (e) => {
-    if (e.currentTarget === e.target) onCloseModal();
-
-    document.querySelector("body").classList.remove("no-scroll");
+    if (e.currentTarget === e.target) {
+      onCloseModal();
+      document.querySelector("body").classList.remove("no-scroll");
+    }
   };
   return (
     <>
