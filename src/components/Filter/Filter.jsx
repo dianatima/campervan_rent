@@ -46,10 +46,12 @@ export const Filter = () => {
         type: "",
       })
     );
+   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     dispatch(setLocationFilter(""));
+   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleSubmit = (event) => {
